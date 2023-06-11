@@ -15,6 +15,7 @@ const AccessTokenMiddleware = async (
       req.url == "/auth/refresh" ||
       (req.method == "POST" && req.url == "/order") ||
       (req.method == "POST" && req.url == "/request") ||
+      (req.method == "POST" && req.url == "/user") ||
       (req.method == "POST" && req.url == "/contact")
     ) {
       next();
